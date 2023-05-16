@@ -8,15 +8,15 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/nickname"
         android:layout_width="225dp"
         android:layout_height="53dp"
         android:ems="10"
         android:gravity="center"
+        android:hint="Имя пользователя"
         android:inputType="textPersonName"
-        android:text="ваш никнейм"
         android:textColor="#93a3b0"
-        app:layout_constraintBottom_toTopOf="@+id/number"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,17 +24,16 @@
         app:layout_constraintVertical_bias="0.502" />
 
     <EditText
-        android:id="@+id/number"
+        android:id="@+id/phoneNum"
         android:layout_width="221dp"
         android:layout_height="58dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="296dp"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
-        android:text="номер телефона"
+        android:hint="Номер телефона"
+        android:inputType="number"
         android:textColor="#93a3b0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UnknownId" />
@@ -46,14 +45,14 @@
         android:layout_marginBottom="79dp"
         android:ems="10"
         android:gravity="center"
+        android:hint="Пароль"
         android:inputType="textPersonName"
-        android:text="пароль"
         android:textColor="#93a3b0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneNum" />
 
     <ImageButton
         android:id="@+id/start"
