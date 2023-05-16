@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), SecondActivty.class);
                     intent.putExtra("Nick", newUser);
                     startActivity(intent);}
+                else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Неправильный логин или пароль", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
     }
