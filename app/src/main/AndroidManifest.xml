@@ -13,6 +13,20 @@
         android:theme="@style/Theme.BestProject"
         tools:targetApi="31">
         <activity
+            android:name=".Screen4Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screen3Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SecondActivty"
             android:exported="false" />
         <activity
@@ -28,6 +42,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".ThreeActivity" />
     </application>
 
 </manifest>

@@ -34,9 +34,12 @@
         app:srcCompat="@drawable/shape" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_item"
         android:layout_width="409dp"
         android:layout_height="636dp"
         android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search" />
