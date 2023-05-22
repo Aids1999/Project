@@ -46,7 +46,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="Пароль"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="#93a3b0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

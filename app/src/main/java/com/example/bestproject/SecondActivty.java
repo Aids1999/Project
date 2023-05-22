@@ -29,6 +29,7 @@ public class SecondActivty extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.list_item);
 
         ImageButton imageButton = findViewById(R.id.account);
+        imageButton.setImageResource(R.drawable.img_5);
         {
             View.OnClickListener goToComment = new View.OnClickListener() {
                 @Override
