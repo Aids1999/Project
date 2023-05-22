@@ -12,7 +12,7 @@ public class Screen6Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.screen5);
+        setContentView(R.layout.screen6);
 
         ImageButton imageButton = findViewById(R.id.back);
         {
