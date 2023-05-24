@@ -8,8 +8,8 @@
 
     <ImageButton
         android:id="@+id/Account"
-        android:layout_width="101dp"
-        android:layout_height="88dp"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:contentDescription="@string/app_name"
@@ -32,13 +32,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="345dp"
-        android:layout_height="345dp"
+        android:layout_width="340dp"
+        android:layout_height="225dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Account"
         app:srcCompat="@drawable/shape"
@@ -46,8 +45,8 @@
 
     <ImageButton
         android:id="@+id/order"
-        android:layout_width="93dp"
-        android:layout_height="92dp"
+        android:layout_width="117dp"
+        android:layout_height="82dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,8 +55,8 @@
 
     <ImageButton
         android:id="@+id/review"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="117dp"
+        android:layout_height="82dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="37dp"
         app:layout_constraintEnd_toEndOf="parent"

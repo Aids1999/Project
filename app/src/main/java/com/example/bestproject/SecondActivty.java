@@ -31,20 +31,20 @@ public class SecondActivty extends AppCompatActivity {
         ImageButton imageButton = findViewById(R.id.account);
         imageButton.setImageResource(R.drawable.img_5);
         {
-            View.OnClickListener goToComment = new View.OnClickListener() {
+            View.OnClickListener goToYourAccount = new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(SecondActivty.this, Screen3Activity.class);
                     startActivity(intent);
                 }
             };
-            imageButton.setOnClickListener(goToComment);
+            imageButton.setOnClickListener(goToYourAccount);
         }
 
         UserListItemAdapter.OnStateClickListener stateClickListener = new UserListItemAdapter.OnStateClickListener() {
             @Override
             public void onStateClick(UserListItem userListItem, int position) {
-                ImageButton imageButton = findViewById(R.id.order);//название id не менять, при измене вылетает приложение
+                ImageButton imageButton = findViewById(R.id.Account);//название id не менять, при измене вылетает приложение
                 View.OnClickListener goToAccount = new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
