@@ -3,6 +3,7 @@ package com.example.bestproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Screen5Activity extends AppCompatActivity {
 
+    ImageButton imageButton;
+    Button lenta;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +24,7 @@ public class Screen5Activity extends AppCompatActivity {
         YourAccount.setImageResource(R.drawable.img_5);
         YourName.setText("Портретодел");
 
-        ImageButton imageButton = findViewById(R.id.back);
+        imageButton = findViewById(R.id.back);
         {
             View.OnClickListener goToSecondActivty = new View.OnClickListener() {
                 @Override
@@ -32,5 +35,14 @@ public class Screen5Activity extends AppCompatActivity {
             };
             imageButton.setOnClickListener(goToSecondActivty);
         }
+
+        lenta = findViewById(R.id.lenta);
+        lenta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent thirdToFive = new Intent(Screen5Activity.this, Screen3Activity.class);
+                startActivity(thirdToFive);
+            }
+        });
     }
 }
