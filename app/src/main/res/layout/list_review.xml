@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFD5D6D6"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearDostalo"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/userPic"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/shape"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#151d28"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textReview"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/post"
+        android:padding="8dp"
+        android:text="Молчание — самый громкий крик, потому что он рвет не уши, а сердце.\nА она любит молочный шоколад, запах ванили, ночь, крепкий кофе по утрам, вишню, сливки и… тебя.\nПоследнее слово всегда остается за парнем. И это слово — Да, дорогая!\nОна изменилась всем назло.\nИсточник: https://citatnica.ru/citaty/samye-vanilnye-tsitaty-500-tsitat"
+        android:textColor="#93a3b0"
+        android:textSize="22sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearDostalo"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
